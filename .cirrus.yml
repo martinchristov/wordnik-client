@@ -1,6 +1,9 @@
 container:
   image: node:8
 check_task:
+  environment:
+    API_TOKEN: ENCRYPTED[92a1db57763a157b4a8bb80f29ce075e17ec0ae185ec8d8a929fa7e6561d47ce17b81ec6c8971d744efd19db36432861]
+    API_URL: https://api.wordnik.com/v4
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat yarn.lock
